@@ -1,0 +1,88 @@
+{
+    "nav": {
+        "experience": "Experiencia",
+        "skills": "Skills",
+        "about": "Sobre mí",
+        "contact": "Contacto"
+    },
+    "hero": {
+        "greeting": "Hola, soy",
+        "name": "Leandro Roldán",
+        "title": "Desarrollador Fullstack",
+        "intro": "Autodidacta, apasionado por la tecnología y la resolución de problemas. Construyo productos digitales con foco en la calidad y la experiencia de usuario.",
+        "cta": "Ver mi trabajo"
+    },
+    "experience": {
+        "title": "Experiencia",
+        "jobs": [
+            {
+                "role": "Desarrollador Fullstack",
+                "company": "Multibreves",
+                "period": "04/2025 — actualidad",
+                "description": "Desarrollo y mantenimiento de plataformas y marketplaces para la publicación y gestión de piezas de recambio en distintos mercados europeos.",
+                "tech": "Next.js, Nest.js, TypeScript, Node.js, AWS EC2, MongoDB"
+            },
+            {
+                "role": "Desarrollador Fullstack",
+                "company": "Crombie",
+                "period": "07/2023 — 06/2024",
+                "description": "Contribuí al frontend y backend de una plataforma financiera líder en Estados Unidos.",
+                "tech": "React, JavaScript, TypeScript, Node.js, AWS Lambda, S3, DynamoDB, Cognito, API Gateway Serverless"
+            },
+            {
+                "role": "Líder de Equipo",
+                "company": "Telefónica",
+                "period": "01/2013 — 03/2021",
+                "description": "Dirección de equipos en un centro de atención al cliente, logrando objetivos de calidad, eficiencia, ventas y retención de clientes.",
+                "tech": ""
+            }
+        ]
+    },
+    "skills": {
+        "title": "Skills"
+    },
+    "about": {
+        "title": "Sobre mí",
+        "p1": "Soy un desarrollador fullstack autodidacta, apasionado por la tecnología y la resolución de problemas. Después de la pandemia de COVID-19, decidí reinventarme como ingeniero de software tras más de 14 años liderando equipos en atención al cliente en una importante compañía de telecomunicaciones, donde también estudié Administración de Empresas.",
+        "p2": "Como desarrollador, trabajé en una agencia en un proyecto con React, Node.js, AWS y TypeScript. Actualmente me desempeño como Desarrollador Fullstack en Multibreves, empresa tecnológica especializada en el sector de la automoción, donde desarrollo y mantengo plataformas y marketplaces de gestión de repuestos para distintos mercados europeos utilizando Next.js, Nest.js, TypeScript, Node.js, AWS y MongoDB.",
+        "p3": "En 2024 emigré de Argentina a España, buscando nuevos desafíos profesionales y personales. Me apasionan el fútbol, los videojuegos, el anime y los viajes. Me considero un gran jugador de equipo, con un fuerte sentido del compromiso y aprendizaje continuo.",
+        "education": "Formación",
+        "educationItems": [
+            {
+                "degree": "Desarrollo Web Fullstack",
+                "institution": "APX (apx.school)",
+                "period": "05/2021 — 03/2023"
+            },
+            {
+                "degree": "Licenciatura en Administración",
+                "institution": "Universidad Siglo XXI",
+                "period": "03/2019 — 03/2021"
+            }
+        ],
+        "languages": "Idiomas",
+        "languageItems": [
+            {
+                "lang": "Español",
+                "level": "Nativo"
+            },
+            {
+                "lang": "Inglés",
+                "level": "Intermedio - Avanzado"
+            }
+        ]
+    },
+    "contact": {
+        "title": "Contacto",
+        "subtitle": "¿Tenés un proyecto en mente? Hablemos.",
+        "name": "Nombre",
+        "email": "Email",
+        "message": "Mensaje",
+        "send": "Enviar mensaje",
+        "namePlaceholder": "Tu nombre",
+        "emailPlaceholder": "tu@email.com",
+        "messagePlaceholder": "Contame de tu proyecto..."
+    },
+    "footer": {
+        "madeWith": "Hecho con Next.js & Tailwind CSS"
+    }
+}

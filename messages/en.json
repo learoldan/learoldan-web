@@ -1,0 +1,88 @@
+{
+    "nav": {
+        "experience": "Experience",
+        "skills": "Skills",
+        "about": "About",
+        "contact": "Contact"
+    },
+    "hero": {
+        "greeting": "Hi, I'm",
+        "name": "Leandro Roldán",
+        "title": "Fullstack Developer",
+        "intro": "Self-taught, passionate about technology and problem-solving. I build digital products with a focus on quality and user experience.",
+        "cta": "See my work"
+    },
+    "experience": {
+        "title": "Experience",
+        "jobs": [
+            {
+                "role": "Fullstack Developer",
+                "company": "Multibreves",
+                "period": "04/2025 — present",
+                "description": "Development and maintenance of platforms and marketplaces for the publication and management of spare parts across different European markets.",
+                "tech": "Next.js, Nest.js, TypeScript, Node.js, AWS EC2, MongoDB"
+            },
+            {
+                "role": "Fullstack Developer",
+                "company": "Crombie",
+                "period": "07/2023 — 06/2024",
+                "description": "Contributed to both frontend and backend of a leading financial platform in the United States.",
+                "tech": "React, JavaScript, TypeScript, Node.js, AWS Lambda, S3, DynamoDB, Cognito, API Gateway Serverless"
+            },
+            {
+                "role": "Team Lead",
+                "company": "Telefónica",
+                "period": "01/2013 — 03/2021",
+                "description": "Led teams in a customer service call center, achieving quality, efficiency, sales and customer retention goals.",
+                "tech": ""
+            }
+        ]
+    },
+    "skills": {
+        "title": "Skills"
+    },
+    "about": {
+        "title": "About Me",
+        "p1": "I'm a self-taught full stack developer, passionate about technology and problem-solving. After the COVID-19 pandemic, I decided to reinvent myself as a software engineer after spending more than 14 years leading customer service teams at a major telecommunications company, where I also studied Business Administration.",
+        "p2": "As a developer, I worked at an agency on a project built with React, Node.js, AWS and TypeScript. I currently work as a Full Stack Developer at Multibreves, a technology company specialized in the automotive sector, where I develop and maintain platforms and marketplaces for spare parts management across different European markets using Next.js, Nest.js, TypeScript, Node.js, AWS and MongoDB.",
+        "p3": "In 2024 I emigrated from Argentina to Spain, looking for new professional and personal challenges. I'm passionate about football, video games, anime, and travelling. I consider myself a great team player with a strong sense of commitment and a continuous learner.",
+        "education": "Education",
+        "educationItems": [
+            {
+                "degree": "Fullstack Web Development",
+                "institution": "APX (apx.school)",
+                "period": "05/2021 — 03/2023"
+            },
+            {
+                "degree": "Business Administration Degree",
+                "institution": "Universidad Siglo XXI",
+                "period": "03/2019 — 03/2021"
+            }
+        ],
+        "languages": "Languages",
+        "languageItems": [
+            {
+                "lang": "Spanish",
+                "level": "Native"
+            },
+            {
+                "lang": "English",
+                "level": "Intermediate - Advanced"
+            }
+        ]
+    },
+    "contact": {
+        "title": "Contact",
+        "subtitle": "Have a project in mind? Let's talk.",
+        "name": "Name",
+        "email": "Email",
+        "message": "Message",
+        "send": "Send message",
+        "namePlaceholder": "Your name",
+        "emailPlaceholder": "you@email.com",
+        "messagePlaceholder": "Tell me about your project..."
+    },
+    "footer": {
+        "madeWith": "Built with Next.js & Tailwind CSS"
+    }
+}
