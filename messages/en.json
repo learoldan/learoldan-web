@@ -78,6 +78,9 @@
         "email": "Email",
         "message": "Message",
         "send": "Send message",
+        "sending": "Sending...",
+        "successMessage": "Message sent! I'll get back to you shortly.",
+        "errorMessage": "Something went wrong. Try again or reach out directly.",
         "namePlaceholder": "Your name",
         "emailPlaceholder": "you@email.com",
         "messagePlaceholder": "Tell me about your project..."

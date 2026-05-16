@@ -1,9 +1,14 @@
 'use client'
 
+import { useActionState } from 'react'
 import { useTranslations } from 'next-intl'
+import { sendEmail } from '@/app/actions/sendEmail'
+
+const initialState = { status: 'idle' as const }
 
 export function Contact() {
     const t = useTranslations('contact')
+    const [state, formAction, pending] = useActionState(sendEmail, initialState)
 
     return (
         <section id='contact' className='py-24 px-6 max-w-5xl mx-auto'>
@@ -15,10 +20,7 @@ export function Contact() {
             </p>
 
             <div className='grid grid-cols-1 md:grid-cols-[1fr_320px] gap-16'>
-                <form
-                    className='space-y-6'
-                    onSubmit={(e) => e.preventDefault()}
-                >
+                <form action={formAction} className='space-y-6'>
                     <div className='space-y-2'>
                         <label
                             htmlFor='name'
@@ -28,7 +30,9 @@ export function Contact() {
                         </label>
                         <input
                             id='name'
+                            name='name'
                             type='text'
+                            required
                             placeholder={t('namePlaceholder')}
                             className='w-full bg-transparent border-b border-border py-3 font-sans text-sm text-foreground placeholder:text-muted/50 focus:outline-none focus:border-foreground transition-colors'
                         />
@@ -43,7 +47,9 @@ export function Contact() {
                         </label>
                         <input
                             id='email'
+                            name='email'
                             type='email'
+                            required
                             placeholder={t('emailPlaceholder')}
                             className='w-full bg-transparent border-b border-border py-3 font-sans text-sm text-foreground placeholder:text-muted/50 focus:outline-none focus:border-foreground transition-colors'
                         />
@@ -58,17 +64,31 @@ export function Contact() {
                         </label>
                         <textarea
                             id='message'
+                            name='message'
                             rows={5}
+                            required
                             placeholder={t('messagePlaceholder')}
                             className='w-full bg-transparent border-b border-border py-3 font-sans text-sm text-foreground placeholder:text-muted/50 focus:outline-none focus:border-foreground transition-colors resize-none'
                         />
                     </div>
 
+                    {state.status === 'success' && (
+                        <p className='font-mono text-xs text-foreground/70'>
+                            {t('successMessage')}
+                        </p>
+                    )}
+                    {state.status === 'error' && (
+                        <p className='font-mono text-xs text-red-500'>
+                            {t('errorMessage')}
+                        </p>
+                    )}
+
                     <button
                         type='submit'
-                        className='font-sans text-sm px-6 py-3 bg-foreground text-background rounded-sm hover:opacity-80 transition-opacity'
+                        disabled={pending}
+                        className='font-sans text-sm px-6 py-3 bg-foreground text-background rounded-sm hover:opacity-80 transition-opacity disabled:opacity-40'
                     >
-                        {t('send')}
+                        {pending ? t('sending') : t('send')}
                     </button>
                 </form>
 
@@ -123,9 +143,6 @@ export function Contact() {
                         </svg>
                         GitHub
                     </a>
-                    <p className='font-mono text-xs text-muted mt-2'>
-                        +34 617 448 075
-                    </p>
                 </div>
             </div>
         </section>

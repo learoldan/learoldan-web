@@ -78,6 +78,9 @@
         "email": "Email",
         "message": "Mensaje",
         "send": "Enviar mensaje",
+        "sending": "Enviando...",
+        "successMessage": "¡Mensaje enviado! Te respondo a la brevedad.",
+        "errorMessage": "Algo salió mal. Intentá de nuevo o escribime directamente.",
         "namePlaceholder": "Tu nombre",
         "emailPlaceholder": "tu@email.com",
         "messagePlaceholder": "Contame de tu proyecto..."
