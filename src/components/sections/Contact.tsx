@@ -21,6 +21,16 @@ export function Contact() {
 
             <div className='grid grid-cols-1 md:grid-cols-[1fr_320px] gap-16'>
                 <form action={formAction} className='space-y-6'>
+                    {/* Honeypot — hidden from humans, bots fill it */}
+                    <div style={{ position: 'absolute', left: '-9999px', opacity: 0, pointerEvents: 'none' }} aria-hidden='true'>
+                        <input
+                            id='website'
+                            name='website'
+                            type='text'
+                            tabIndex={-1}
+                            autoComplete='off'
+                        />
+                    </div>
                     <div className='space-y-2'>
                         <label
                             htmlFor='name'

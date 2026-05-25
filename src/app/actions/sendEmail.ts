@@ -11,6 +11,12 @@ export async function sendEmail(
     _prevState: SendEmailState,
     formData: FormData,
 ): Promise<SendEmailState> {
+    const honeypot = (formData.get('website') as string) ?? ''
+    if (honeypot) {
+        // Bot filled the hidden field — silently pretend success
+        return { status: 'success' }
+    }
+
     const name = (formData.get('name') as string)?.trim()
     const email = (formData.get('email') as string)?.trim()
     const message = (formData.get('message') as string)?.trim()
