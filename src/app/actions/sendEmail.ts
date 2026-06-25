@@ -27,17 +27,17 @@ export async function sendEmail(
 
     const resend = new Resend(process.env.RESEND_API_KEY)
 
-    const { error } = await resend.emails.send({
-        from: 'Portfolio Contact <onboarding@resend.dev>',
-        to: 'learoldan.dev@gmail.com',
-        replyTo: email,
-        subject: `Portfolio contact — ${name}`,
-        html: `<p><strong>From:</strong> ${name} &lt;${email}&gt;</p><p>${message.replace(/\n/g, '<br>')}</p>`,
-    })
+    // const { error } = await resend.emails.send({
+    //     from: 'Portfolio Contact <onboarding@resend.dev>',
+    //     to: 'learoldan.dev@gmail.com',
+    //     replyTo: email,
+    //     subject: `Portfolio contact — ${name}`,
+    //     html: `<p><strong>From:</strong> ${name} &lt;${email}&gt;</p><p>${message.replace(/\n/g, '<br>')}</p>`,
+    // })
 
-    if (error) {
-        return { status: 'error' }
-    }
+    // if (error) {
+    //     return { status: 'error' }
+    // }
 
     return { status: 'success' }
 }
